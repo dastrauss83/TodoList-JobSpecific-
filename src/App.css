@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgba(0, 148, 50, 0.7);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  margin-top: 30px;
+  font-size: 400%;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Todo {
+  border: solid;
+  width: calc(80vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+
+.Button {
+  font: inherit;
+  color: whitesmoke;
+  background-color: blueviolet;
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+}
+
+.SchoolInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid;
+  border-width: 1px;
+  width: 100%;
+}
+
+.SchoolName {
+  font-size: 150%;
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+
+.ContactInputsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 5px);
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+
+.ContactInput {
+  display: flex;
+}
+
+#Name {
+  display: flex;
+  align-self: flex-start;
+}
+
+#Email {
+  display: flex;
+  align-self: center;
+}
+
+#Phone {
+  display: flex;
+  align-self: flex-end;
+}
+
+.DataTrackerSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: solid;
+  border-width: 1px;
+  padding-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.DataTracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DataTrackerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.CheckBox {
+  margin-right: 5px;
+}
+
+.DataTrackerType {
+  font-size: 100%;
+  width: 60px;
+  align-self: center;
+}
+
+.DataTextArea {
+  width: 90%;
+  height: 50px;
+  font: inherit;
+  font-size: 75%;
+  border-radius: 7px;
+}
+
+.ContactNoteSection {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.ContactNote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ContactNoteType {
+  font-size: 100%;
+  margin-bottom: 5px;
+}
+
+.ContactNotes {
+  width: 90%;
+  height: 75px;
+  margin-bottom: 5px;
+  font: inherit;
+  font-size: 75%;
+  border-radius: 7px;
+}
+
+.SchoolInfoInputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.SchoolInfoInput {
+  margin: 10px;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 75%;
+}
+
+.InfoRequest {
+  font: inherit;
+  font-size: 300%;
 }
